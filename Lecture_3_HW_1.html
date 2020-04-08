@@ -7,13 +7,10 @@ var oneEuroPrice = 25;
 
 var userSum = parseInt(prompt("Your sum for currency exchange: "));
 
-var sumInDollars = oneDollarPrice * userSum;
+var sumInDollars = userSum/ oneDollarPrice ;
+var sumInEuro = userSum / oneEuroPrice;
 
-alert ("Your sum in dollars: " + sumInDollars);
-
-var suumInEuro = oneEuroPrice * userSum;
-alert ("Your sum in dollars: " + suumInEuro);
-
+alert ("Your sum in dollars: " + sumInDollars.toFixed(2) + "\'Your sum in dollars: " + sumInEuro.toFixed(2));
 
 
 </script>

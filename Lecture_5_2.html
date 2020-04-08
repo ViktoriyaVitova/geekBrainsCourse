@@ -1,0 +1,21 @@
+<meta charset="utf-8">
+<script type="text/javascript">
+
+var yourNumber = +prompt ("Please, enter your number: ");
+var sum = 0;
+
+if (isNaN(yourNumber) || yourNumber < 0) {
+    document.write("It shoudl be a positive number");
+}
+else {
+    for (var i=0; i < yourNumber; i++){
+    sum +=i;
+    document.write(i + " " + sum + "<br>");
+}
+document.write(sum);
+}
+
+
+
+
+</script>
